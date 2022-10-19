@@ -1,3 +1,3 @@
 # Personal Portfolio
 
-![Screenshot of portfolio](https://github.com/andrewthamcc/portfolio/blob/master/static/screenshot.png)
+![Screenshot of portfolio](https://raw.githubusercontent.com/andrewthamcc/portfolio/main/static/screenshot.png)
