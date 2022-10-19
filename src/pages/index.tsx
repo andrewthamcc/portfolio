@@ -6,6 +6,7 @@ import {
   ExternalLink,
   Hero,
   SectionHeading,
+  SEO,
   Skills,
   SocialLinks,
   Text,
@@ -70,4 +71,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Home Page</title>
+export const Head: HeadFC = () => <SEO title="Andrew Tham" />

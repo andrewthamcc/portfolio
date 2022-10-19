@@ -1,8 +1,8 @@
 import * as React from 'react'
-import styled from 'styled-components'
 import { HeadFC } from 'gatsby'
+import styled from 'styled-components'
 import { Layout } from '../layout'
-import { Text } from '../components'
+import { SEO, Text } from '../components'
 
 const NotFondTitle = styled.h2`
   font-size: 3rem;
@@ -34,4 +34,4 @@ const NotFoundPage = () => {
 
 export default NotFoundPage
 
-export const Head: HeadFC = () => <title>Not found</title>
+export const Head: HeadFC = () => <SEO title="Not Found" />

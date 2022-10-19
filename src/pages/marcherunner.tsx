@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { HeadFC, useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 import { Layout } from '../layout'
@@ -11,6 +11,7 @@ import {
   PortfolioLink,
   Text,
   TechIcons,
+  SEO,
 } from '../components'
 
 const MarcheRunnerSection = styled.section`
@@ -126,3 +127,5 @@ const MarcheRunner = () => {
   )
 }
 export default MarcheRunner
+
+export const Head: HeadFC = () => <SEO title="AT | MarchéRunner" />

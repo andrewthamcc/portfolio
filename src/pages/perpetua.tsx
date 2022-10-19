@@ -1,8 +1,7 @@
 import React from 'react'
-// import SEO from '../components/seo'
-import styled from 'styled-components'
-import { useStaticQuery, graphql } from 'gatsby'
+import { HeadFC, useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import styled from 'styled-components'
 import { Layout } from '../layout'
 import {
   Container,
@@ -10,6 +9,7 @@ import {
   SectionHeading,
   Text,
   TechIcons,
+  SEO,
 } from '../components'
 
 const PerpetuaSection = styled.section`
@@ -124,3 +124,5 @@ const Perpetua = () => {
 }
 
 export default Perpetua
+
+export const Head: HeadFC = () => <SEO title="AT | Perpetua" />

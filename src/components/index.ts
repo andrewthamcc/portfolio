@@ -1,5 +1,6 @@
 export * from './common'
 export * from './hero'
+export * from './seo'
 export * from './social-links'
 export * from './skills'
 export * from './tech-icons'

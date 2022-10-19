@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { HeadFC, useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 import { Layout } from '../layout'
@@ -12,6 +12,7 @@ import {
   Text,
   TechIcons,
   ExternalLink,
+  SEO,
 } from '../components'
 
 const MapleLeafsDroughtSection = styled.section`
@@ -118,3 +119,5 @@ const MapleLeafsDrought = () => {
 }
 
 export default MapleLeafsDrought
+
+export const Head: HeadFC = () => <SEO title="AT | Maple Leafs Drought" />

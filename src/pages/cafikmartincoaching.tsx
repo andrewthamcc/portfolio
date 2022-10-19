@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { HeadFC, useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 import { Layout } from '../layout'
@@ -12,6 +12,7 @@ import {
   PortfolioLink,
   TechIcons,
   MediaWidths,
+  SEO,
 } from '../components'
 
 const CafikMartinSection = styled.section`
@@ -89,7 +90,6 @@ const Cafikmartin = () => {
 
   return (
     <Layout>
-      {/* <SEO title="LCM Coaching" /> */}
       <CafikMartinSection>
         <TextContainer>
           <SectionHeading>Cafik-Martin Coaching</SectionHeading>
@@ -187,3 +187,5 @@ const Cafikmartin = () => {
 }
 
 export default Cafikmartin
+
+export const Head: HeadFC = () => <SEO title="AT | Cafik-Martin Coaching" />
