@@ -63,7 +63,7 @@ const MarcheRunner = () => {
               View Repository
             </PortfolioLink>
             <PortfolioLink
-              href="http://marcherunner.herokuapp.com/"
+              href="https://marcherunner.onrender.com/"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -104,7 +104,6 @@ const MarcheRunner = () => {
               'Auth0',
               'Docker',
               'Jest',
-              'Heroku',
             ]}
           />
           <Text>

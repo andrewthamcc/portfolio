@@ -92,7 +92,6 @@ export const ExternalLink = styled.a`
 
 export const InternalLink = styled(Link)`
   ${LinkStyle}
-  display: inline-block;
 `
 
 export const PortfolioLinkContainer = styled.div`

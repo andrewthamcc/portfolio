@@ -62,7 +62,9 @@ export const Work = () => {
             Coping with disappointing performance of the Toronto Maple Leafs
             with a fun little art project.
           </Text>
-          <InternalLink to="/mapleleafs">View Project</InternalLink>
+          <div>
+            <InternalLink to="/mapleleafs">View Project</InternalLink>
+          </div>
         </WorkItem>
 
         <WorkItem>
@@ -75,7 +77,9 @@ export const Work = () => {
           <Text>
             A web application to help you on your weekly shopping trips.
           </Text>
-          <InternalLink to="/marcherunner">View Project</InternalLink>
+          <div>
+            <InternalLink to="/marcherunner">View Project</InternalLink>
+          </div>
         </WorkItem>
 
         <WorkItem>
@@ -89,7 +93,9 @@ export const Work = () => {
             I had the opportunity to work as an intern at Draper AI, a start-up
             based in Toronto.
           </Text>
-          <InternalLink to="/perpetua">Read about my experience</InternalLink>
+          <div>
+            <InternalLink to="/perpetua">Read about my experience</InternalLink>
+          </div>
         </WorkItem>
 
         <WorkItem>
@@ -103,7 +109,9 @@ export const Work = () => {
             Website with secure client portal designed, built, and deployed for
             Orthodontic Speaker and Coach Laura Cafik-Martin.
           </Text>
-          <InternalLink to="/cafikmartincoaching">View Project</InternalLink>
+          <div>
+            <InternalLink to="/cafikmartincoaching">View Project</InternalLink>
+          </div>
         </WorkItem>
       </WorkItemContainer>
     </TextContainer>
