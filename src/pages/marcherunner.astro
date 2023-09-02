@@ -1,0 +1,52 @@
+---
+import { Image } from 'astro:assets'
+import Layout from '../layouts/Layout.astro'
+import MarcheRunnerDashboard from '../images/marcherunner/marcherunner-dashboard.png'
+import MarcheRunner from '../images/marcherunner/marcherunner.png'
+import TechIcons from '../components/tech-icons.astro';
+---
+
+<Layout showHomeLink title="Andrew Tham | MarchéRunner">
+  <main>
+    <h2>MARCHÉRUNNER</h2>
+    <p>
+      When going grocery shopping I was using a draft email in Gmail to write
+      down my lists before heading out. I built this project out of desire for a
+      better experience and to learn new technologies and improve on my skills.
+    </p>
+
+    <Image
+      alt="MarcheRunner"
+      class="drop-shadow-md"
+      src={MarcheRunner}
+      transition:name="/marcherunner"
+    />
+
+    <p>
+      This project is a glorified To-Do List/Task application but has been
+      incredibly useful to help learn new things and showcase skills I have
+      picked up over time.
+    </p>
+
+    <TechIcons
+      icons={[
+        { name: 'logos:react', alt: 'React' },
+        { name: 'logos:typescript-icon', alt: 'TypeScript' },
+        { name: 'logos:sass', alt: 'SASS' },
+        { name: 'logos:storybook-icon', alt: 'Storybook' },
+        { name: 'logos:nodejs-icon', alt: 'Storybook' },
+        { name: 'logos:apollostack', alt: 'Apollo' },
+        { name: 'logos:graphql', alt: 'GraphQL' },
+        { name: 'logos:express', alt: 'Express' },
+        { name: 'logos:prisma', alt: 'Prisma' },
+        { name: 'logos:postgresql', alt: 'PostgreSQL' },
+        { name: 'logos:expo', alt: 'Expo' },
+        { name: 'logos:auth0', alt: 'Auth0' },
+        { name: 'logos:docker', alt: 'Docker' },
+        { name: 'logos:jest', alt: 'Jest' },
+      ]}
+    />
+
+    <Image src={MarcheRunnerDashboard} alt="MarcheRunner dashboard" />
+  </main>
+</Layout>

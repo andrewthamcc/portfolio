@@ -1,0 +1,28 @@
+---
+import { Icon } from 'astro-icon'
+
+interface Icon {
+  name: string
+  alt: string
+}
+
+interface Props {
+  icons: Icon[]
+}
+
+const { icons } = Astro.props
+---
+
+<ul
+  class={`flex items-center ${
+    icons.length > 5 ? 'justify-around' : 'justify-center'
+  } gap-4`}
+>
+  {
+    icons.map((i) => (
+      <li>
+        <Icon className="h-10" key={i.name} name={i.name} alt={i.alt} />
+      </li>
+    ))
+  }
+</ul>

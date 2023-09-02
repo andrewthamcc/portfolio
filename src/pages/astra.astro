@@ -1,0 +1,41 @@
+---
+import { Image } from 'astro:assets'
+import Layout from '../layouts/Layout.astro'
+import TechIcons from '../components/tech-icons.astro'
+import AstraHome from '../images/astra/Astra.png'
+import AstraFull from '../images/astra/astra-full.png'
+---
+
+<Layout showHomeLink title="Andrew Tham | Astra the dog">
+  <main>
+    <h2>Astra the dog</h2>
+    <p>
+      Website for my dog, Astra! The site contains information such as
+      vaccination records and licensing.
+    </p>
+
+    <Image
+      alt="Astra"
+      class="drop-shadow-md"
+      src={AstraHome}
+      transition:name="/astra"
+    />
+
+    <p>
+      Astra wears a QR code around her collar linking to this website. Upon
+      scanning the code the user can geolocate their position and contact me to
+      report their location. The contact feature is not available unless the QR
+      code link is used to access the site.
+    </p>
+
+    <TechIcons
+      icons={[
+        { name: 'logos:react', alt: 'React' },
+        { name: 'logos:typescript-icon', alt: 'TypeScript' },
+        { name: 'logos:tailwindcss-icon', alt: 'Tailwind CSS' },
+      ]}
+    />
+
+    <Image src={AstraFull} alt="MarcheRunner dashboard" />
+  </main>
+</Layout>
