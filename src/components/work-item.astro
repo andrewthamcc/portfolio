@@ -11,7 +11,12 @@ interface Props {
 const { description, href, image, title } = Astro.props
 ---
 
-<div class="flex flex-col text-gray-600">
+<style>
+  p {
+    @apply leading-6 text-gray-600;
+  }
+</style>
+<div class="flex flex-col">
   <a href={href}>
     <div
       class="my-4 flex max-h-[18rem] drop-shadow-lg transition-all hover:scale-110"

@@ -7,8 +7,13 @@ import AstraFull from '../images/astra/astra-full.png'
 ---
 
 <Layout showHomeLink title="Andrew Tham | Astra the dog">
+  <style>
+    p {
+      @apply mb-6 leading-6;
+    }
+  </style>
   <main>
-    <h2>Astra the dog</h2>
+    <h2 class="mb-6 text-3xl">Astra the dog</h2>
     <p>
       Website for my dog, Astra! The site contains information such as
       vaccination records and licensing.
@@ -16,16 +21,16 @@ import AstraFull from '../images/astra/astra-full.png'
 
     <Image
       alt="Astra"
-      class="drop-shadow-md"
+      class="mb-6 drop-shadow-lg"
       src={AstraHome}
       transition:name="/astra"
     />
 
     <p>
-      Astra wears a QR code around her collar linking to this website. Upon
-      scanning the code the user can geolocate their position and contact me to
-      report their location. The contact feature is not available unless the QR
-      code link is used to access the site.
+      Astra wears a collar tag eteched with a QR code linking to this website.
+      Upon scanning the code the user can geolocate their position and contact
+      me to report their location. The contact feature is not available unless
+      the QR code link is used to access the site.
     </p>
 
     <TechIcons
@@ -36,6 +41,10 @@ import AstraFull from '../images/astra/astra-full.png'
       ]}
     />
 
-    <Image src={AstraFull} alt="MarcheRunner dashboard" />
+    <Image
+      class="drop-shadow-lg"
+      src={AstraFull}
+      alt="MarcheRunner dashboard"
+    />
   </main>
 </Layout>

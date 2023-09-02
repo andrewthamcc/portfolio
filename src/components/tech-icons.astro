@@ -14,9 +14,10 @@ const { icons } = Astro.props
 ---
 
 <ul
-  class={`flex items-center ${
-    icons.length > 5 ? 'justify-around' : 'justify-center'
-  } gap-4`}
+  class:list={[
+    'flex items-center my-10 flex-wrap gap-4',
+    { 'justify-around': icons.length > 5, 'justify-center': icons.length <= 5 },
+  ]}
 >
   {
     icons.map((i) => (

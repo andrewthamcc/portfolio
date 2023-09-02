@@ -7,8 +7,13 @@ import Timeline from '../images/mapleleafsdrought/timeline.png'
 ---
 
 <Layout showHomeLink title="Andrew Tham | Maple Leafs Drought">
+  <style>
+    p {
+      @apply mb-6 leading-6;
+    }
+  </style>
   <main>
-    <h2>Maple Leafs Drought</h2>
+    <h2 class="mb-6 text-3xl">Maple Leafs Drought</h2>
     <p>
       Maple Leafs Drought was created in response to the Maple Leafs 2021
       playoff loss. Wanting to channel my disappointment and fustration I
@@ -17,7 +22,7 @@ import Timeline from '../images/mapleleafsdrought/timeline.png'
 
     <Image
       alt="Maple Leafs Drought"
-      class="drop-shadow-md"
+      class="mb-6 drop-shadow-lg"
       src={MapleLeafsDrought}
       transition:name="/mapleleafsdrought"
     />
@@ -47,7 +52,7 @@ import Timeline from '../images/mapleleafsdrought/timeline.png'
       ]}
     />
 
-    <Image src={Timeline} alt="timeline" />
+    <Image class="mb-6 drop-shadow-lg" src={Timeline} alt="timeline" />
 
     <p>
       I still believe in the team and will forever be a fan. I hope to be able

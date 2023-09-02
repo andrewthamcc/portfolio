@@ -3,12 +3,17 @@ import { Image } from 'astro:assets'
 import Layout from '../layouts/Layout.astro'
 import MarcheRunnerDashboard from '../images/marcherunner/marcherunner-dashboard.png'
 import MarcheRunner from '../images/marcherunner/marcherunner.png'
-import TechIcons from '../components/tech-icons.astro';
+import TechIcons from '../components/tech-icons.astro'
 ---
 
 <Layout showHomeLink title="Andrew Tham | MarchéRunner">
+  <style>
+    p {
+      @apply mb-6 leading-6;
+    }
+  </style>
   <main>
-    <h2>MARCHÉRUNNER</h2>
+    <h2 class="mb-6 text-3xl">MARCHÉRUNNER</h2>
     <p>
       When going grocery shopping I was using a draft email in Gmail to write
       down my lists before heading out. I built this project out of desire for a
@@ -17,7 +22,7 @@ import TechIcons from '../components/tech-icons.astro';
 
     <Image
       alt="MarcheRunner"
-      class="drop-shadow-md"
+      class="mb-6 drop-shadow-lg"
       src={MarcheRunner}
       transition:name="/marcherunner"
     />
@@ -47,6 +52,16 @@ import TechIcons from '../components/tech-icons.astro';
       ]}
     />
 
-    <Image src={MarcheRunnerDashboard} alt="MarcheRunner dashboard" />
+    <p>
+      This project has had several iterations and been useful in learning new
+      skills. MarchéRunner was my first fullstack project originally built on
+      the MERN stack and has been rebuilt to learn new things.
+    </p>
+
+    <Image
+      alt="MarcheRunner dashboard"
+      class="drop-shadow-lg"
+      src={MarcheRunnerDashboard}
+    />
   </main>
 </Layout>

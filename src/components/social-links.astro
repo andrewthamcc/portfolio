@@ -9,9 +9,10 @@ const { align } = Astro.props
 ---
 
 <div
-  class={`items-center gap-2 text-gray-950 flex my-4 ${
-    align === 'right' ? 'justify-end' : 'justify-start'
-  }`}
+  class:list={[
+    'my-4 flex items-center gap-2 text-gray-950',
+    { 'justify-start': align === 'left', 'justify-end': align === 'right' },
+  ]}
 >
   <a
     class="h-8 w-8 transition-all hover:scale-125"

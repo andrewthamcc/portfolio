@@ -24,7 +24,7 @@ const { showHomeLink, title } = Astro.props
     <header>
       {
         showHomeLink && (
-          <div class="mx-auto mt-20 w-4/5 max-w-7xl text-right">
+          <div class="mx-auto my-6 w-4/5 max-w-7xl text-right md:mt-20">
             <a class="rounded-lg bg-gray-950 p-2 font-bold text-white" href="/">
               at
             </a>
@@ -35,7 +35,7 @@ const { showHomeLink, title } = Astro.props
     <div class="mx-auto w-4/5 max-w-7xl flex-1">
       <slot />
     </div>
-    <footer class="bg-gray-950 py-2">
+    <footer class="bg-gray-950 py-2 mt-4 md:mt-20">
       <div class="mx-auto w-4/5 max-w-7xl">
         <p class="text-xs text-white">
           Andrew Tham © {new Date().getFullYear()}

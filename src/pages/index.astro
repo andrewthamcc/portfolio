@@ -14,25 +14,34 @@ const heroImage = await getImage({ src: HeroImage })
 ---
 
 <Layout title="Andrew Tham">
+  <style>
+    p {
+      @apply mb-6 leading-6 text-gray-600;
+    }
+  </style>
   <main>
-    <h1 class="mb-10 mt-40 text-right text-7xl uppercase">Andrew Tham</h1>
+    <h1
+      class="mb-4 mt-10 text-right text-3xl uppercase md:mb-10 md:mt-40 md:text-7xl"
+    >
+      Andrew Tham
+    </h1>
     <SocialLinks align="right" />
     <div
-      class="mb-20 h-[450px] bg-cover bg-bottom grayscale"
+      class="bg-bottom-left mb-20 h-[450px] bg-cover grayscale md:bg-bottom"
       style={`background-image: url(${heroImage.src})`}
     >
     </div>
 
     <section class="mb-20 leading-7 text-gray-600">
-      <p class="mb-6">
+      <p>
         I&apos;m a developer based in Toronto, Canada. I graduated from The
         University of Toronto with a degree in Physics after which I trained and
         worked as a Chef.
       </p>
-      <p>
+      <p class="mb-0">
         I&apos;m an adept problem solver, have a strong background of working in
         teams, and enjoy challenges. I&apos;m passionate about technology and
-        using code to solve problems and to create and bring websites and web
+        using code to solve problems and to create and bring websites and
         applications to life.
       </p>
     </section>
@@ -43,7 +52,7 @@ const heroImage = await getImage({ src: HeroImage })
     >
       <ul
         style={{ listStyle: 'circle' }}
-        class="ml-[1rem] mt-6 grid grid-cols-4 gap-4 text-gray-600"
+        class="ml-[1rem] mt-6 grid grid-cols-2 gap-4 text-gray-600 md:grid-cols-4"
       >
         <li>HTML</li>
         <li>CSS</li>
@@ -65,7 +74,7 @@ const heroImage = await getImage({ src: HeroImage })
     </Section>
 
     <Section title="works" description="Selected works and past projects.">
-      <div class="grid grid-cols-2 gap-16">
+      <div class="grid grid-cols-1 gap-16 sm:grid-cols-2">
         <WorkItem
           description="A web application to help you on your weekly shopping trips."
           href="/marcherunner"
@@ -94,12 +103,12 @@ const heroImage = await getImage({ src: HeroImage })
     </Section>
 
     <Section title="Contact me">
-      <p class="leading-7 text-gray-600">
+      <p>
         Reach out if you're looking for a developer, have a question, or would
         like to connect.
       </p>
       <a
-        class="text-gray-600 hover:underline"
+        class="hover:underline"
         href="mailto: hello@andrewtham.cc"
         title="hello@andrewtham.cc"
       >
