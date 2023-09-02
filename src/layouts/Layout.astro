@@ -14,8 +14,18 @@ const { showHomeLink, title } = Astro.props
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="personal website of Andrew Tham" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Andrew Tham, hello@andrewtham.cc" />
+    <meta name="description" content="Portfolio of Andrew Tham" />
+    <meta
+      name="keywords"
+      content="web devloper, front end developer, web dev, dev, portfolio, toronto, tham, andrew tham, react, node, javascript, typescript, html, css"
+    />
+    <meta property="og:title" content="Andrew Tham | Developer" />
+    <meta property="og:description" content="Portfolio of Andrew Tham" />
+    <meta property="og:image" content="https://www.andrewtham.cc/seo.png" />
+    <meta property="og:url" content="https://www.andrewtham.cc" />
+
     <link rel="icon" type="image" href="/icon.png" />
     <title>{title}</title>
     <ViewTransitions />
@@ -35,7 +45,7 @@ const { showHomeLink, title } = Astro.props
     <div class="mx-auto w-4/5 max-w-7xl flex-1">
       <slot />
     </div>
-    <footer class="bg-gray-950 py-2 mt-4 md:mt-20">
+    <footer class="mt-4 bg-gray-950 py-2 md:mt-20">
       <div class="mx-auto w-4/5 max-w-7xl">
         <p class="text-xs text-white">
           Andrew Tham © {new Date().getFullYear()}
