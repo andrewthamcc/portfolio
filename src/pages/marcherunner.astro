@@ -12,76 +12,75 @@ import TechIcons from '../components/tech-icons.astro'
       @apply mb-6 text-justify leading-6 text-gray-600;
     }
   </style>
-  <main>
-    <h2 class="mb-6 text-3xl">MARCHÉRUNNER</h2>
 
-    <div class="mb-6 flex items-center gap-2">
-      <a
-        class="font-semibold hover:underline"
-        href="https://github.com/andrewthamcc/marcherunner"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        View on GitHub
-      </a>
-      <a
-        class="font-semibold hover:underline"
-        href="https://marcherunner.vercel.app/"
-        rel="noopener noreferrer"
-        target="_blank"
-        title="LinkedIn"
-      >
-        View Live
-      </a>
-    </div>
+  <h2 class="mb-6 text-3xl">MARCHÉRUNNER</h2>
 
-    <p>
-      When going grocery shopping I was using a draft email in Gmail to write
-      down my lists before heading out. I built this project out of desire for a
-      better experience and to learn new technologies and improve on my skills.
-    </p>
+  <div class="mb-6 flex items-center gap-2">
+    <a
+      class="font-semibold hover:underline"
+      href="https://github.com/andrewthamcc/marcherunner"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      View on GitHub
+    </a>
+    <a
+      class="font-semibold hover:underline"
+      href="https://marcherunner.vercel.app/"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="LinkedIn"
+    >
+      View Live
+    </a>
+  </div>
 
-    <Image
-      alt="MarcheRunner"
-      class="mb-6 drop-shadow-lg"
-      src={MarcheRunner}
-      transition:name="/marcherunner"
-    />
+  <p>
+    When going grocery shopping I was using a draft email in Gmail to write down
+    my lists before heading out. I built this project out of desire for a better
+    experience and to learn new technologies and improve on my skills.
+  </p>
 
-    <p>
-      MarchéRunner is a glorified To-Do List/Task application but has been
-      incredibly useful to help learn new things and showcase skills I have
-      picked up over time.
-    </p>
+  <Image
+    alt="MarcheRunner"
+    class="mb-6 drop-shadow-lg"
+    src={MarcheRunner}
+    transition:name="/marcherunner"
+  />
 
-    <TechIcons
-      icons={[
-        { name: 'logos:react', alt: 'React' },
-        { name: 'logos:typescript-icon', alt: 'TypeScript' },
-        { name: 'logos:sass', alt: 'SASS' },
-        { name: 'logos:storybook-icon', alt: 'Storybook' },
-        { name: 'logos:nodejs-icon', alt: 'Storybook' },
-        { name: 'logos:apollostack', alt: 'Apollo' },
-        { name: 'logos:graphql', alt: 'GraphQL' },
-        { name: 'logos:express', alt: 'Express' },
-        { name: 'logos:prisma', alt: 'Prisma' },
-        { name: 'logos:postgresql', alt: 'PostgreSQL' },
-        { name: 'logos:expo', alt: 'Expo' },
-        { name: 'logos:auth0', alt: 'Auth0' },
-        { name: 'logos:docker', alt: 'Docker' },
-        { name: 'logos:jest', alt: 'Jest' },
-      ]}
-    />
+  <p>
+    MarchéRunner is a glorified To-Do List/Task application but has been
+    incredibly useful to help learn new things and showcase skills I have picked
+    up over time.
+  </p>
 
-    <p>
-      This project was my first fullstack project originally built on the MERN
-      stack and has been rebuilt to learn new things.
-    </p>
+  <TechIcons
+    icons={[
+      { name: 'logos:react', alt: 'React' },
+      { name: 'logos:typescript-icon', alt: 'TypeScript' },
+      { name: 'logos:sass', alt: 'SASS' },
+      { name: 'logos:storybook-icon', alt: 'Storybook' },
+      { name: 'logos:nodejs-icon', alt: 'Storybook' },
+      { name: 'logos:apollostack', alt: 'Apollo' },
+      { name: 'logos:graphql', alt: 'GraphQL' },
+      { name: 'logos:express', alt: 'Express' },
+      { name: 'logos:prisma', alt: 'Prisma' },
+      { name: 'logos:postgresql', alt: 'PostgreSQL' },
+      { name: 'logos:expo', alt: 'Expo' },
+      { name: 'logos:auth0', alt: 'Auth0' },
+      { name: 'logos:docker', alt: 'Docker' },
+      { name: 'logos:jest', alt: 'Jest' },
+    ]}
+  />
 
-    <Image
-      alt="MarcheRunner dashboard"
-      class="drop-shadow-lg"
-      src={MarcheRunnerDashboard}
-    />
-  </main>
+  <p>
+    This project was my first fullstack project originally built on the MERN
+    stack and has been rebuilt to learn new things.
+  </p>
+
+  <Image
+    alt="MarcheRunner dashboard"
+    class="drop-shadow-lg"
+    src={MarcheRunnerDashboard}
+  />
 </Layout>

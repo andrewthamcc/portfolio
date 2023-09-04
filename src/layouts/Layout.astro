@@ -31,20 +31,24 @@ const { showHomeLink, title } = Astro.props
     <ViewTransitions />
   </head>
   <body class="flex h-screen flex-col">
-    <header>
+    <header class="mx-auto w-4/5 max-w-7xl">
       {
-        showHomeLink && (
-          <div class="mx-auto my-6 w-4/5 max-w-7xl text-right md:mt-20">
+        showHomeLink ? (
+          <div class="mx-auto my-6 text-right md:mt-20">
             <a class="rounded-lg bg-gray-950 p-2 font-bold text-white" href="/">
               at
             </a>
           </div>
+        ) : (
+          <h1 class="mt-10 text-right text-3xl uppercase md:mt-40 md:text-7xl">
+            Andrew Tham
+          </h1>
         )
       }
     </header>
-    <div class="mx-auto w-4/5 max-w-7xl flex-1">
+    <main class="mx-auto w-4/5 max-w-7xl flex-1">
       <slot />
-    </div>
+    </main>
     <footer class="mt-4 bg-gray-950 py-2 md:mt-20">
       <div class="mx-auto w-4/5 max-w-7xl">
         <p class="text-xs text-white">
