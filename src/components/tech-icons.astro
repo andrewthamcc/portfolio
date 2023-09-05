@@ -22,7 +22,7 @@ const { icons } = Astro.props
   {
     icons.map((i) => (
       <li>
-        <Icon className="h-10" key={i.name} name={i.name} alt={i.alt} />
+        <Icon className="h-10" name={i.name} alt={i.alt} />
       </li>
     ))
   }
