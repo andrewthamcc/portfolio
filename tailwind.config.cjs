@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
       },
+      listStyleType: {
+        circle: 'circle',
+      },
     },
   },
   plugins: [],
