@@ -4,8 +4,6 @@ import Layout from '../layouts/Layout.astro'
 import TechIcons from '../components/tech-icons.astro'
 import LCM from '../images/lcm/lcm.png'
 import LCMFull from '../images/lcm/lcm-full.png'
-import LCMLogin from '../images/lcm/lcm-login.png'
-import LCMModules from '../images/lcm/lcm-modules.png'
 ---
 
 <Layout showHomeLink title="Andrew Tham | Cafik-Martin Coaching">
@@ -21,7 +19,6 @@ import LCMModules from '../images/lcm/lcm-modules.png'
       class="font-semibold hover:underline"
       href="https://cafikmartincoaching.com/"
       target="_blank"
-      title="LinkedIn"
     >
       View Live
     </a>
@@ -42,55 +39,29 @@ import LCMModules from '../images/lcm/lcm-modules.png'
   <p>
     I had built a website for Laura in 2019 fresh out of web development
     bootcamp. The website was a very simple three page static build written with
-    HTML, SCSS and some JavaScript. A year later Laura approached me with plans
-    to expand on her website to include a section where she could launch her
-    online mentoring and coaching program. We also took this opportunity to
-    redesign her page and update the codebase to utilize a static site
-    generator.
-  </p>
-
-  <p>
-    The challenge to this update was building out a client portal that included
-    authentication and tracked user progress through the course. Not wanting to
-    build out a database or dedicated server I turned to Firebase which provided
-    a simple database and could handle secure user authentication. Firebase's
-    console panel also allows for multiple users and is user friendly and simple
-    enough for Laura to understand and use on her own.
-  </p>
-
-  <p>
-    Another benefit of Firebase are its good documentation and large userbase.
-    Gatsby also has good documentation on usage and interaction with Firebase on
-    their official documentation.
+    HTML, SCSS and some JavaScript. During the pandemic Laura was pivoting to
+    coaching and asked me to expand on her website to include a section where
+    she could her online program.
   </p>
 
   <TechIcons
     icons={[
-      { name: 'logos:gatsby', alt: 'Gatsby' },
-      { name: 'logos:javascript', alt: 'JavaScript' },
-      { name: 'logos:sass', alt: 'SASS' },
-      { name: 'logos:firebase', alt: 'Firebase' },
+      { name: 'logos:astro', alt: 'Astro' },
+      { name: 'logos:tailwindcss-icon', alt: 'Tailwind' },
+      { name: 'logos:react', alt: 'React' },
+      { name: 'logos:remix-icon', alt: 'Remix' },
+      { name: 'logos:typescript-icon', alt: 'TypeScript' },
+      { name: 'logos:sanity', alt: 'Sanity' },
+      { name: 'logos:prisma', alt: 'Prisma' },
+      { name: 'logos:postgresql', alt: 'PostgreSQL' },
+      { name: 'logos:auth0-icon', alt: 'Auth0' },
+      { name: 'logos:netlify', alt: 'Netlify' },
     ]}
   />
 
-  <div class="flex flex-col items-center gap-8 md:flex-row md:items-start">
-    <Image
-      class="shadow-xl md:w-1/2"
-      src={LCMFull}
-      alt="Cafik-Martin coaching full page"
-    />
-
-    <div class="flex flex-col gap-8 md:w-1/2">
-      <Image
-        class="shadow-xl"
-        src={LCMModules}
-        alt="Cafik-Martin modules page"
-      />
-      <Image
-        class="shadow-xl"
-        src={LCMLogin}
-        alt="Cafik-Martin login page"
-      />
-    </div>
-  </div>
+  <Image
+    class="m-auto w-4/5 shadow-xl"
+    src={LCMFull}
+    alt="Cafik-Martin coaching full page"
+  />
 </Layout>
